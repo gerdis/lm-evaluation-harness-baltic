@@ -26,3 +26,5 @@ include: LTR_common_yaml
 task: LTR_en_lt
 doc_to_text: en
 doc_to_target: lt
+tag:
+  - baltic_transl
