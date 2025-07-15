@@ -1,0 +1,42 @@
+# This file will be included in the generated language-specific task configs.
+# It doesn't have a yaml file extension as it is not meant to be imported directly
+# by the harness.
+
+#dataset_path: Muennighoff/xwinograd
+#dataset_name: null  # Overridden by language-specific config.
+#output_type: multiple_choice
+#training_split: null
+#validation_split: null
+#test_split: test
+#doc_to_text: !function utils.doc_to_text
+#doc_to_target: !function utils.doc_to_target
+#doc_to_choice: !function utils.doc_to_choice
+#metric_list:
+#  - metric: acc
+#    aggregation: mean
+#    higher_is_better: true
+#metadata:
+#  version: 1.0
+
+dataset_path: lingvanex/lingvanex_test_references
+dataset_name: null # Overridden by language-specific config.
+output_type: generate_until
+training_split: null
+validation_split: null
+test_split: test
+fewshot_split: test
+doc_to_text: null # Overridden by language-specific config.
+doc_to_target: null # Overridden by language-specific config.
+generation_kwargs:
+  do_sample: false #use greedy generation
+  max_new_tokens: 60
+  until:
+    - "\n"
+repeats: 1
+metric_list:
+  - metric: bleu
+  - metric: ter
+  - metric: chrf
+metadata:
+  version: 1.0
+
