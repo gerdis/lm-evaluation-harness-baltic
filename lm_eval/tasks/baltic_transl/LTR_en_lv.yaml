@@ -1,5 +1,5 @@
 dataset_name: en-de
 include: LTR_common_yaml
-task: LTR_en_lt
+task: LTR_en_lv
 doc_to_text: en
 doc_to_target: de
