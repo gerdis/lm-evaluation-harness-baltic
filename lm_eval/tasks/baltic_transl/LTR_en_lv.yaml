@@ -1,7 +1,7 @@
-dataset_name: en-de
+dataset_name: en-lv
 include: LTR_common_yaml
 task: LTR_en_lv
 doc_to_text: en
-doc_to_target: de
+doc_to_target: lv
 tag:
   - baltic_transl
