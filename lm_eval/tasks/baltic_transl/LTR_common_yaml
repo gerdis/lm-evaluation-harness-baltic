@@ -12,7 +12,7 @@ fewshot_split: test
 doc_to_text: null # Overridden by language-specific config.
 doc_to_target: null # Overridden by language-specific config.
 generation_kwargs:
-  do_sample: false #use greedy generation
+  do_sample: false
   max_new_tokens: 60
   until:
     - "\n"
