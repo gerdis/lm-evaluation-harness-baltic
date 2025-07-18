@@ -6,6 +6,7 @@
 #tag:
 #  - baltic_transl
 
+dataset_path: lingvanex/lingvanex_test_references
 dataset_name: en-lv
 include: LTR_common_yaml
 task: LTR_en_lv
