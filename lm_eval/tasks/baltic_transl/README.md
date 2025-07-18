@@ -3,6 +3,11 @@
 
 * LTR_en_lt (English to Lithuanian)
 * LTR_en_lv (English to Latvian)
+* wmt19_lt_en (Lithuanian to English)
+
+### Note
+
+The current versions of these tasks are meant to be used with models which have been specifically trained for translation (no prompt template is used in doc_to_text).   
 
 ### Checklist
 
