@@ -2,18 +2,32 @@
 # It doesn't have a yaml file extension as it is not meant to be imported directly
 # by the harness.
 
-dataset_path: lingvanex/lingvanex_test_references
-dataset_name: null # Overridden by language-specific config.
+#dataset_path: lingvanex/lingvanex_test_references
+#dataset_name: null # Overridden by task-specific config.
+#output_type: generate_until
+#training_split: null
+#validation_split: null
+#test_split: test
+#fewshot_split: test
+#doc_to_text: null # Overridden by task-specific config.
+#doc_to_target: null # Overridden by task-specific config.
+#generation_kwargs:
+#  do_sample: false
+#  max_new_tokens: 60
+#  until:
+#    - "\n"
+#repeats: 1
+#metric_list:
+#  - metric: bleu
+#  - metric: ter
+#  - metric: chrf
+#metadata:
+#  version: 1.0
+  
 output_type: generate_until
-training_split: null
-validation_split: null
-test_split: test
-fewshot_split: test
-doc_to_text: null # Overridden by language-specific config.
-doc_to_target: null # Overridden by language-specific config.
 generation_kwargs:
   do_sample: false
-  max_new_tokens: 60
+  max_new_tokens: 100
   until:
     - "\n"
 repeats: 1
@@ -22,5 +36,5 @@ metric_list:
   - metric: ter
   - metric: chrf
 metadata:
-  version: 1.0
+  version: 1.0  
 
