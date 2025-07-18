@@ -1,0 +1,11 @@
+dataset_path: wmt/wmt19
+dataset_name: lt-en
+task: wmt19_lt_en
+include: LTR_common_yaml
+training_split: train
+validation_split: validation
+test_split: null
+doc_to_text: translation["lt"]
+doc_to_target: translation["en"]
+tag:
+  - baltic_transl
