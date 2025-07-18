@@ -1,6 +1,4 @@
 # This file will be included in the generated language-specific task configs.
-# It doesn't have a yaml file extension as it is not meant to be imported directly
-# by the harness.
  
 output_type: generate_until
 generation_kwargs:
